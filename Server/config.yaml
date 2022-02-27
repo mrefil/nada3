@@ -1,0 +1,31 @@
+#
+# Filename: config.yaml
+# Project:  Assignment 3
+# By: Mustafa Efiloglu
+# Date: February 26, 2021
+# Description:  Basic config file
+#
+
+server:
+  ip: "127.0.0.1"
+  pt: "8000"
+  maximum_msg:  4096
+  msg_seperator:  "-"
+  mil_sec: 1024
+
+logging:
+  file: "msg.log"
+  file_dir: "./logging/"
+  date: "%Y:%m:%d %H:%M:%S.%f"
+  logg: "{date} {id} {logging_lvl}\t{msg}\n"
+  logging_lvl: { 0: "ALL", 1: "DEBUG", 2: "INFO", 3: "WARN", 4: "ERROR", 5: "FATAL", 6: "OFF", 7: "TRACE" }
+  logging_lvlOff: 6
+  logging_lvlOn: 0
+  date_idx: 0
+  clnt_i_idx: 1
+  logg_lvl_idx: 2
+  msg_idx: 3
+
+nse_hdlg:
+  mx_nmbr_msg: 100
+  date_lmt: 60
